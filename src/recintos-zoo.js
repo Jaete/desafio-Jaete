@@ -80,9 +80,6 @@ class RecintosZoo {
             }
             else if(animal.name != AnimalNames.HIPOPOTAMUS)
             {
-                if(!EnclosureHandlers.enclosureHasAdequateBiome(enclosure, animal)){
-                    continue;
-                }
                 if(!EnclosureHandlers.enclosureHasSpace(enclosure, animal, quantity, false)){
                     continue;
                 }
@@ -109,9 +106,6 @@ class RecintosZoo {
                 foundEnclosure = true;
             }
             else{
-                if(!EnclosureHandlers.enclosureHasAdequateBiome(enclosure, animal)){
-                    continue;
-                }
                 if(EnclosureHandlers.enclosureHasAnyCarnivore(enclosure)){
                     continue;
                 };
